@@ -8,7 +8,7 @@ class Api {
       var url = Uri.parse(ApiConstants.baseUrl);
       var response = await http.get(url);
       if (response.statusCode == 200) {
-        List<Teams> _teams = userModelFromJson(response.body);
+        List<Teams> _teams = teamModelFromJson(response.body);
         return _teams;
       }
     } catch (e) {
