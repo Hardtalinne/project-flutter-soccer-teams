@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:project_app/ui/theme/theme.dart';
 import 'package:project_app/ui/ui.dart';
 
 void main() {
-  runApp(const MaterialApp(
-    home: HomePage(),
+  runApp(MaterialApp(
+    home: const HomePage(),
     title: 'Time de Futebol',
+    theme: createAppTheme(),
     debugShowCheckedModeBanner: false,
   ));
 }

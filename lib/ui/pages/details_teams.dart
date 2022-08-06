@@ -10,18 +10,26 @@ class DetailsTeams extends StatelessWidget {
   @override
   Widget build(BuildContext context, {required}) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(teams.name),
-      ),
-      body: Center(
-          child: Column(children: <Widget>[
-        const Text(
-          'Bandeira',
-          style: TextStyle(fontSize: 25),
+        appBar: AppBar(
+          title: const Text('Detalhes'),
         ),
-        Image.network(
-            '${ApiConstants.baseUrlImg}${teams.flag.replaceFirst('~', '')}'),
-      ])),
-    );
+        body: Padding(
+          padding: const EdgeInsets.all(50),
+          child: Center(
+              child: Column(children: <Widget>[
+            Text(
+              teams.name,
+              style: const TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            Image.network(
+              '${ApiConstants.baseUrlImg}${teams.flag.replaceFirst('~', '')}',
+              width: 250,
+              height: 250,
+            ),
+          ])),
+        ));
   }
 }
