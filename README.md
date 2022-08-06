@@ -1,16 +1,11 @@
-# project_app
+# App Times de Futebol
 
-Project to translate message for fun
+Projeto desenvolvido com o objetivo de consumir uma api externa e mostrar os dados na tela. Pós
+Graduação WEBDEV / Desenvolvimento com Flutter.
 
-## Getting Started
+## Imagem do App
 
-This project is a starting point for a Flutter application.
+![Tela Inicial](lib/img/Screenshot_20220806_182408.png)
+![Tela Detalhes](lib/img/Screenshot_20220806_182523.png)
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## [LINK DA API](http://controle.mdvsistemas.com.br/Esportes/Times/GetTime)
