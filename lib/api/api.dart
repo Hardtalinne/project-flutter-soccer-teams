@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 import 'package:project_app/api/api_constants.dart';
 import 'package:project_app/models/teams.dart';
@@ -8,11 +9,14 @@ class Api {
       var url = Uri.parse(ApiConstants.baseUrl);
       var response = await http.get(url);
       if (response.statusCode == 200) {
-        List<Teams> _teams = teamModelFromJson(response.body);
-        return _teams;
+        List<Teams> teams = teamModelFromJson(response.body);
+        return teams;
       }
     } catch (e) {
-      print(e);
+      if (kDebugMode) {
+        print(e);
+      }
     }
+    return null;
   }
 }
